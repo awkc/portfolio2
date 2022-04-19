@@ -1,0 +1,189 @@
+@media (max-width: 1399px) {
+  .promo-aside__wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-item {
+    width: 100%;
+  }
+
+  .resume {
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__order-2 {
+      margin-top: 40px;
+      order: 1;
+    }
+    &__order-3 {
+      order: 2;
+    }
+  }
+
+  .resume-item {
+    max-width: 100%;
+    &__text {
+      max-width: 100%;
+    }
+  }
+
+  .skills {
+    &__items {
+      grid-template-columns: repeat(3, 270px);
+      justify-content: center;
+    }
+  }
+
+  .progress {
+    &__items {
+      grid-template-columns: repeat(2, 350px);
+      justify-content: center;
+    }
+  }
+
+  .portfolio {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 280px);
+      justify-content: center;
+      .vertical,
+      .horizont {
+        grid-column: unset;
+        grid-row: unset;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .about {
+    padding: 40px 0;
+  }
+
+  .skills {
+    &__items {
+      grid-template-columns: repeat(2, 270px);
+    }
+  }
+
+  .portfolio-price {
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__items:first-child {
+      margin-bottom: 15px;
+    }
+    &__item {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    &__items {
+      padding-top: 20px;
+      width: 100%;
+    }
+    &__img {
+      width: 310px;
+      margin-right: 20px;
+    }
+  }
+
+  .resume-item {
+    margin-left: 50px;
+  }
+
+  .progress {
+    padding: 60px 0px 0;
+    &__items {
+      grid-template-columns: repeat(1, 100%);
+    }
+    &__line {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .promo {
+    background-position: 60%;
+    .promo &__title {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
+
+  .menu {
+    &__block {
+      width: 250px;
+    }
+    &__list {
+      margin-left: 50px;
+    }
+  }
+
+  .about {
+    &__img {
+      float: none;
+      margin: 0 auto;
+    }
+    &__subtitle {
+      margin-top: 20px;
+    }
+    &__title {
+      font-size: 24px;
+    }
+  }
+
+  .resume {
+    padding-bottom: 60px;
+  }
+
+  .resume-item {
+    margin-left: 10px;
+  }
+
+  .resume__subtitle {
+    font-size: 24px;
+    margin-bottom: 40px;
+    &::before {
+      bottom: -6px;
+    }
+  }
+
+  .skills {
+    padding-bottom: 60px;
+    &__subtitle {
+      font-size: 24px;
+      margin-bottom: 40px;
+      &::before {
+        bottom: 0;
+      }
+    }
+    &__items {
+      grid-template-columns: repeat(1, 270px);
+    }
+  }
+  .portfolio {
+    &__subtitle {
+      font-size: 24px;
+      margin-bottom: 40px;
+      &::before {
+        bottom: 0;
+      }
+    }
+  }
+
+  .portfolio-price {
+    padding: 60px 0 60px;
+    &__title {
+      margin-bottom: 60px;
+    }
+    &__wrapper {
+      padding: 0 5px 0px 20px;
+    }
+  }
+}
